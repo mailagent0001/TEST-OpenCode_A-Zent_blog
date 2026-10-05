@@ -28,4 +28,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USE_GITHUB_TOKEN: "true"
         with:
-          model: google/gemini-3.8-flash
+        　 model: google/gemini-3.5-flash-lite
