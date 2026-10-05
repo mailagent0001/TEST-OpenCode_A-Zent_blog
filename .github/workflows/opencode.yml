@@ -23,6 +23,16 @@ jobs:
         with:
           persist-credentials: false
 
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+
+          
+
       # 1番手: 高性能だが枠が小さい（1日20回）
       - name: opencode (primary - 3.8 Flash)
         id: primary
